@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FlyBe</title>
+<meta name="ad.size" content="height=300,width=250">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>     
+<style type="text/css">
+
+body {
+  background: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  margin:0px;
+}
+#container {
+    width: 298px;
+    height: 248px;
+    position:absolute;
+    background-color: black;
+    border: #CCCCCC 1px solid;
+    overflow: hidden;
+}
+#bgExit{
+    width: 300px;
+    height: 250px;
+    position:absolute;
+    cursor: pointer;
+}
+
+#bgExit img {
+    border: none;
+}
+
+#background{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+	width: 300px;
+	height: 250px;
+	opacity: 1;
+} 
+
+#background img {
+    border: none;
+}
+
+#logos{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 1;
+    border: none;
+} 
+
+#logos img {
+    border: none;
+}
+
+#copy1{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    border: none;
+}
+
+#copy1 img {
+    border: none;
+}
+
+#copy2{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    border: none;
+}  
+
+#copy2 img {
+    border: none;
+}
+
+
+#copy3{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    border: none;
+}
+
+#copy3 img {
+    border: none;
+}
+
+#bullet_points{
+    position:absolute;
+    top: 19px;
+    left: 27px;
+    opacity: 1;
+    border: none;
+} 
+
+#terms{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    border: none;
+} 
+
+#terms img {
+    border: none;
+}
+
+#cta{
+    position:absolute;
+    top: 120px;
+    left: 20px;
+    opacity: 0;
+    border: none;
+}  
+#cta img {
+    border: none;
+}
+
+/*
+#red_circle{
+    position:absolute;
+    top: 95px;
+    left: 27px;
+    opacity: 0;
+    border: none;
+} */
+
+#red_circle_sprite {
+  position: absolute;
+  top: 95px;
+  left: 27px;
+  width: 257px;
+  height: 73px;
+  background-image: url('images/circle_animate.png');
+  display: block;
+  opacity: 0;
+/*animation: sprite .77s steps(21) 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-duration: .8s; */
+  
+  -webkit-animation: sprite .77s steps(21) 3s forwards;
+  -moz-animation: sprite .77s steps(21) 3s forwards;
+  -ms-animation: sprite .77s steps(21) 3s forwards;
+  animation: sprite .77s steps(21) 3s forwards;
+
+}
+
+@-webkit-keyframes sprite {
+    100% { background-position: -5418px; }
+}
+ 
+@keyframes sprite {
+    100% { background-position: -5418px; }
+}
+
+
+#red_line1{
+    position:absolute;
+    top: 37px;
+    left: 0px;
+    opacity: 0;
+    border: none;
+} 
+
+#red_line2{
+    position:absolute;
+    top: 79px;
+    left: 0px;
+    opacity: 0;
+    border: none;
+} 
+
+#offer{
+    position:absolute;
+    top: 20px;
+    right:20px;
+	width: auto;
+	height: auto;
+    opacity: 0;
+    border: none;
+}
+
+#purple{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+	opacity: 0;
+    border: none;
+}
+
+#plane{
+    position:absolute;
+    top:51px;
+    left:-750px;
+	width:250%;
+	height:250%;
+    opacity: 1;
+    border: none;
+}
+
+#plane img {
+    border: none;
+}
+
+#sheenHolder{
+    position: absolute;
+    width: 113px;
+    height: 32px;
+    top: 120px;
+    left: 20px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+#sheenHolder img {
+    border: none;
+}
+
+#sheen {
+    top: -25px;
+    position: relative;
+    opacity: 0;
+    border: none;
+}
+
+#sheen img {
+    border: none;
+}
+
+</style>    
+</head>
+    
+<body>
+
+   <div id="container">
+       <a href="javascript:window.open(window.clickTag)">
+       <div id="bgLockup"><img src="images/background.svg"></img></div>
+       <div id="bullet_points"><img src="images/bullet_points.png"></img></div>
+       <div id="plane"><img src="images/plane.svg"></img></div>
+       <div id="purple"><img src="images/purple.png"></img></div>
+       <div id="logos"><img src="images/logos.png"></img></div>
+       <div id="copy1"><img src="images/copy1.png"></img></div>
+       <div id="copy2"><img src="images/copy2.png"></img></div>
+       <div id="copy3"><img src="images/copy3.png"></img></div>
+       <div id="terms"><img src="images/terms.png"></img></div>
+       <div id="offer"><img src="images/offer.png"></img></div>
+       <div id="red_circle_sprite"></div>
+       <div id="red_line1"><img src="images/red_line.png"></img></div>
+       <div id="red_line2"><img src="images/red_line.png"></img></div>
+       <div id="cta"><img src="images/cta.png"></img></div>
+        <div id="sheenHolder">
+        <div id="sheen"><img src="images/sheen.png"></div>
+        </div>
+        <div id="bgExit"></div>
+        </a>
+</div>
+<script src="/js/prefixfree.min.js"></script>
+</body>
+    
+<!-- GSAP ANIMATION CODE -->    
+<script type="text/javascript" charset="utf-8" src="scripts/banner.js"></script>    
+</html>
